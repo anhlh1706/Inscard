@@ -302,14 +302,14 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="backgroundImageView" destination="nzE-3D-x0J" id="Gz0-DY-8Me"/>
-                <outlet property="followerCountLabel" destination="FRA-hS-HBV" id="MkO-xY-WmG"/>
-                <outlet property="followingCountLabel" destination="qEG-B2-Dz8" id="P8q-mS-9Gy"/>
-                <outlet property="idLabel" destination="o3h-kA-9A1" id="6hk-tY-rbZ"/>
-                <outlet property="nameLabel" destination="btj-5T-rHe" id="yFJ-mD-L0u"/>
                 <outlet property="plusImageView" destination="6Wx-48-g67" id="P04-EX-wdU"/>
-                <outlet property="postCountLabel" destination="bFR-Va-sZG" id="sHV-Yx-nW8"/>
                 <outlet property="profileImageView" destination="MW8-t2-HKS" id="KT6-39-AAd"/>
                 <outlet property="smallProfileImageView" destination="jVZ-NK-UiS" id="Shd-bd-s36"/>
+                <outletCollection property="labels" destination="o3h-kA-9A1" collectionClass="NSMutableArray" id="4SU-Ua-VzQ"/>
+                <outletCollection property="labels" destination="btj-5T-rHe" collectionClass="NSMutableArray" id="Rhc-2h-Z7O"/>
+                <outletCollection property="labels" destination="bFR-Va-sZG" collectionClass="NSMutableArray" id="Fnl-hi-hLl"/>
+                <outletCollection property="labels" destination="FRA-hS-HBV" collectionClass="NSMutableArray" id="yeK-fN-GEp"/>
+                <outletCollection property="labels" destination="qEG-B2-Dz8" collectionClass="NSMutableArray" id="qOR-fr-LOk"/>
             </connections>
             <point key="canvasLocation" x="131.8840579710145" y="4.3526785714285712"/>
         </view>

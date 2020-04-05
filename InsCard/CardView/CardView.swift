@@ -32,14 +32,10 @@ extension UIView {
 }
 
 final class CardView: UIView {
-    @IBOutlet private weak var idLabel: UILabel!
+    @IBOutlet private var labels: [UILabel]!
     @IBOutlet private weak var backgroundImageView: UIImageView!
-    @IBOutlet private weak var nameLabel: UILabel!
     @IBOutlet private weak var profileImageView: UIImageView!
     @IBOutlet private weak var smallProfileImageView: UIImageView!
-    @IBOutlet private weak var postCountLabel: UILabel!
-    @IBOutlet private weak var followerCountLabel: UILabel!
-    @IBOutlet private weak var followingCountLabel: UILabel!
     @IBOutlet private weak var plusImageView: UIImageView!
     
     private let shadowLayer = CAShapeLayer()
@@ -52,11 +48,7 @@ final class CardView: UIView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        idLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(editText(_:))))
-        nameLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(editText(_:))))
-        postCountLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(editText(_:))))
-        followerCountLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(editText(_:))))
-        followingCountLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(editText(_:))))
+        labels.forEach { $0.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(editText(_:)))) }
         profileImageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(editProfileImage)))
         backgroundImageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(editProfileImage)))
         
@@ -147,13 +139,13 @@ private extension CardView {
         
         let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         
-        alert.addAction(UIAlertAction(title: "From library", style: .default, handler: { _ in
+        alert.addAction(title: "From library") {
             self.showPicker(sourceType: .photoLibrary)
-        }))
+        }
         
-        alert.addAction(UIAlertAction(title: "Take new photo", style: .default, handler: { _ in
+        alert.addAction(title: "Take new photo") {
             self.showPicker(sourceType: .camera)
-        }))
+        }
         
         alert.addCancelAction()
         
