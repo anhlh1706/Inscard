@@ -13,6 +13,10 @@
 		E63AC3122438BD9500E00D2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E63AC3102438BD9500E00D2B /* Main.storyboard */; };
 		E63AC3142438BD9700E00D2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E63AC3132438BD9700E00D2B /* Assets.xcassets */; };
 		E63AC3172438BD9700E00D2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E63AC3152438BD9700E00D2B /* LaunchScreen.storyboard */; };
+		E63AC3222438C25200E00D2B /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63AC3212438C25200E00D2B /* CardView.swift */; };
+		E63AC3242438C25A00E00D2B /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E63AC3232438C25A00E00D2B /* CardView.xib */; };
+		E63AC3382438CA7100E00D2B /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63AC3372438CA7100E00D2B /* UIImage.swift */; };
+		E63AC33A2438D04E00E00D2B /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63AC3392438D04E00E00D2B /* AlertService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		E63AC3132438BD9700E00D2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E63AC3162438BD9700E00D2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E63AC3182438BD9700E00D2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E63AC3212438C25200E00D2B /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		E63AC3232438C25A00E00D2B /* CardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
+		E63AC3372438CA7100E00D2B /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		E63AC3392438D04E00E00D2B /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 		E63AC3092438BD9500E00D2B /* InsCard */ = {
 			isa = PBXGroup;
 			children = (
+				E63AC3202438C24400E00D2B /* CardView */,
 				E63AC30A2438BD9500E00D2B /* AppDelegate.swift */,
 				E63AC30C2438BD9500E00D2B /* SceneDelegate.swift */,
 				E63AC30E2438BD9500E00D2B /* ViewController.swift */,
@@ -63,8 +72,19 @@
 				E63AC3132438BD9700E00D2B /* Assets.xcassets */,
 				E63AC3152438BD9700E00D2B /* LaunchScreen.storyboard */,
 				E63AC3182438BD9700E00D2B /* Info.plist */,
+				E63AC3372438CA7100E00D2B /* UIImage.swift */,
+				E63AC3392438D04E00E00D2B /* AlertService.swift */,
 			);
 			path = InsCard;
+			sourceTree = "<group>";
+		};
+		E63AC3202438C24400E00D2B /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				E63AC3212438C25200E00D2B /* CardView.swift */,
+				E63AC3232438C25A00E00D2B /* CardView.xib */,
+			);
+			path = CardView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +147,7 @@
 			files = (
 				E63AC3172438BD9700E00D2B /* LaunchScreen.storyboard in Resources */,
 				E63AC3142438BD9700E00D2B /* Assets.xcassets in Resources */,
+				E63AC3242438C25A00E00D2B /* CardView.xib in Resources */,
 				E63AC3122438BD9500E00D2B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,7 +160,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E63AC30F2438BD9500E00D2B /* ViewController.swift in Sources */,
+				E63AC3382438CA7100E00D2B /* UIImage.swift in Sources */,
 				E63AC30B2438BD9500E00D2B /* AppDelegate.swift in Sources */,
+				E63AC3222438C25200E00D2B /* CardView.swift in Sources */,
+				E63AC33A2438D04E00E00D2B /* AlertService.swift in Sources */,
 				E63AC30D2438BD9500E00D2B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
